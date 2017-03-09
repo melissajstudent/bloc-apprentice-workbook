@@ -10,19 +10,56 @@
 
 ### Questions
 
-1. What is HTML and what is it used for?
-2. What is the difference between an ID and a class?
-3. What does it mean to write "semantic" HTML?
+1. What is HTML and what is it used for? <br>HTML stands for hypertext markup language and is the language used to build web pages.
+2. What is the difference between an ID and a class? <br>Class defines the style which is generally done in css file. ID is a way to label parts of the code for referencability.
+3. What does it mean to write "semantic" HTML? <br>Writing code where elements have distinguishable roles
 
 ### Exercises
 
-1. Write a paragraph tag with a class of "highlight" and content "Watch out!".
-2. Write an HTML image tag to show an image called `profile-picture.jpg`.
-3. Write a link tag that links to http://google.com.
-5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).
-6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
-7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
-8. Write a numbered list in HTML and list three of your favorite books.
+1. Write a paragraph tag with a class of "highlight" and content "Watch out!". <br>
+`<p class = "highlight">Watch out!"</p>`
+2. Write an HTML image tag to show an image called `profile-picture.jpg`.<br>
+`<img src='profile-picture.jpg' />`
+3. Write a link tag that links to http://google.com.<br>
+`<a href="http://google.com">Link text</a>`
+5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).<br>
+```
+<DOCTYPE html>
+<html>
+  <head></head>
+  <body></body>
+ </html>
+ ```
+6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.<br>
+```
+<DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+  <script src='main.js'></script>
+  </body>
+ </html>
+ ```
+7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.<br>
+```
+<DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <script src='main.js'></script>
+  </body>
+ </html>
+ ```
+8. Write a numbered list in HTML and list three of your favorite books.<br>
+```
+<ol>
+  <li>Of Mice and Men</li>
+  <li>Eloquent Javascript</li>
+  <li>Lean Startup</li>
+ </ol>
+ ```
 9. Fix the indentation of the following HTML sample:
 
   ```html
@@ -34,12 +71,22 @@
     </ul>
     </div>
   ```
-
+<br>
+```
+<div>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+</div>
+  ```
 ## CSS
 
 ### Questions
 
-1. What is CSS and what is it used for?
+1. What is CSS and what is it used for?<br>
+Cascading Style Sheets are a way to define the look of web pages. 
 2. What is the CSS box model?
 3. What's the difference between margin and padding?
 
