@@ -36,7 +36,7 @@
 <html>
   <head></head>
   <body>
-  <script src='main.js'></script>
+    <script src='main.js'></script>
   </body>
  </html>
  ```
@@ -87,17 +87,28 @@
 
 1. What is CSS and what is it used for?<br>
 Cascading Style Sheets are a way to define the look of web pages. 
-2. What is the CSS box model?
-3. What's the difference between margin and padding?
+2. What is the CSS box model?<br>
+The content of the space of each element including margin, border, padding, and content edges.
+3. What's the difference between margin and padding?<br>
+Margin controls the space between elements and padding controls space between an element's border and content.
 
 ### Exercises
 
-1. Write a CSS rule to make the text of all `h1` tags red.
+1. Write a CSS rule to make the text of all `h1` tags red.<br>
+    `h1 {
+      text-color: red;
+    }`
 2. Write a CSS rule to make the background color of the link with `class="btn"` blue:
 
   ```html
   <a href="#" class="btn">Learn more</a>
   ```
+  
+  ```html
+  .btn {
+    background-color: blue;
+  }
+   ```
 
 3. Write a CSS rule to give the first paragraph in the following HTML a font size of `20px`, but not the second paragraph.
 
@@ -108,23 +119,61 @@ Cascading Style Sheets are a way to define the look of web pages.
 
   <p>Welcome to this awesome website!</p>
   ```
+  ```html
+  .jumbotron {
+    p {
+      font-size: 20px;
+    }
+  }
+   ```
 
 ## JavaScript
 
 ### Questions
 
-1. What is a function? What are they used for?
-2. What is the difference between `==` and `===`?
-3. What is the difference between global and local scope variables?
-4. What is a boolean value?
-5. What is an array?
+1. What is a function? What are they used for?<br>
+A function is a code set that performs a task and is used to reduce cide redundancy.
+2. What is the difference between `==` and `===`?<br>
+== checks to see if values are equal to each other where === not only checks to see if they're equal but also the same type (e.g. string, number, etc.)
+3. What is the difference between global and local scope variables?<br>
+local variables live only within the scope of a function where global values can be referenced anywhere
+4. What is a boolean value?<br>
+Either true or false
+5. What is an array?<br>
+An object that contains a set of objects under one name
 
 ### Exercises
 
-1. Write a line that declares a variable called `myName` and set its value to your name.
-2. Write a loop that logs the numbers 1 through 10 to the console.
+1. Write a line that declares a variable called `myName` and set its value to your name.<br>
+ 
+ ```html
+ var myName = "Melissa Johnson";
+ ```
+ 
+2. Write a loop that logs the numbers 1 through 10 to the console.<br>
+
+ ```html
+ for (i = 0, i < 10, i++) {
+   console.log(i);
+ }
+ ```
+  
 3. Translate the following pseudocode into JavaScript: if `score` is greater than `3` and `lives` is greater than `0`, alert "You win!".
-4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.
+
+ ```html
+ score > 3 && lives > 0 ? console.log("You win!");
+ ```
+  
+4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.<br>
+
+ ```html
+ function sayHello(name) {
+   console.log(name);
+ }
+ 
+ sayHello("Melissa")
+ ```
+ 
 5. What would the following script log to the console?
 
   ```javascript
@@ -138,6 +187,8 @@ Cascading Style Sheets are a way to define the look of web pages.
 
   console.log(currentSong);
   ```
+<br>
+Friday, Friday
 
 6. What would the following script log to the console?
 
@@ -150,6 +201,8 @@ Cascading Style Sheets are a way to define the look of web pages.
 
   console.log(result);
   ```
+  <br>
+  10
 
 7. What would the following script log to the console?
 
@@ -168,10 +221,50 @@ Cascading Style Sheets are a way to define the look of web pages.
 
   console.log(helloGoodbye("Sarah"));
   ```
+<br>
+Hello Sarah! Goodbye Sarah!
 
-8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
-9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
-10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.<br>
+
+ ```html
+ function findLongestWord(arr) {
+    var x = 1, longestWord = arr(0);
+    while (x < arr.length) {
+      var longestWord = (arr(x) > longestWord) ? arr(x);
+      x++;
+    }
+    return longestWord.length;
+  }
+  ```
+  
+9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.<br>
+
+ ```html
+ function sum(arr) {
+   var x = 0;
+   var sum = 0;
+   where x < arr.length {
+     sum += arr(x);
+     x++;
+   }
+ }
+ ```
+ 
+10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.<br>
+
+```html
+function vowelCheck(string) {
+  var vowels = ["a", "e", "i", "o", "u"], x = 0;
+  while x < vowels.length {
+    if (string = vowels(x)) {
+      true;
+      return; 
+    } else {
+      false;
+      return;
+    }
+```
+
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
   ```javascript
