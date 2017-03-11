@@ -161,7 +161,7 @@ An object that contains a set of objects under one name
 3. Translate the following pseudocode into JavaScript: if `score` is greater than `3` and `lives` is greater than `0`, alert "You win!".
 
  ```html
- score > 3 && lives > 0 ? console.log("You win!");
+ score > 3 && lives > 0 ? alert("You win!");
  ```
   
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.<br>
